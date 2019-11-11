@@ -44,17 +44,17 @@ namespace HomeProject
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(), "OtherStaticFile")),
-                RequestPath = "/MyStaticFiles",
-                OnPrepareResponse = ctx =>
-                {
-                    ctx.Context.Response.Headers.Add("ComeFrom","Chao Project");
-                }
+            //app.UseStaticFiles(new StaticFileOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //        Path.Combine(Directory.GetCurrentDirectory(), "OtherStaticFile")),
+            //    RequestPath = "/MyStaticFiles",
+            //    OnPrepareResponse = ctx =>
+            //    {
+            //        ctx.Context.Response.Headers.Add("ComeFrom","Chao Project");
+            //    }
 
-            });
+            //});
 
             app.UseRouting();
 

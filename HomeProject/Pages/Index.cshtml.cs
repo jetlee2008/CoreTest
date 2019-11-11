@@ -11,10 +11,12 @@ namespace HomeProject.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        public readonly string machineName;
 
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
+            machineName = Environment.MachineName;
         }
 
         public void OnGet()
