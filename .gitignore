@@ -3,7 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=aspnetcore
 
 # Ignore minified css files
-*.min.css
+#*.min.css
 
 # Ignore minified js files
 #*.min.js
