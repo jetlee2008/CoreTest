@@ -289,11 +289,11 @@ src/Web/package-lock.json
 *.playlist
 
 # BeatPulse healthcheck temp database
-healthchecksdb
-**/wwwroot/css
-**/wwwroot/js
-**/wwwroot/img
-**/Web/.nyc_output
+#healthchecksdb
+#**/wwwroot/css
+#**/wwwroot/js
+#**/wwwroot/img
+#**/Web/.nyc_output
 
 
 # dotnet core version file
