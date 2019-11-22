@@ -1,0 +1,1 @@
+docker build -t tagname -f ./file/path/of/Dockerfile .(context path)
